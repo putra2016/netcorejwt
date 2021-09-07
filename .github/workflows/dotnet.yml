@@ -28,7 +28,7 @@ jobs:
     - name: Sync Files0
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ${{ secrets.FTP_SERVER }}
+        server: putracode.somee.com/www.putracode.somee.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./Release/
