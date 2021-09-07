@@ -24,11 +24,11 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish -c Release --output ./Release
+      run: dotnet publish -c Release -o ./Release
     - name: Sync Files0
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp://putracode.somee.com/www.putracode.somee.com:21
+        server: ftp://putracode.somee.com/www.putracode.somee.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./Release/
