@@ -28,6 +28,14 @@ namespace WebApi.Controllers
 
             return Ok(user);
         }
+        
+        [AllowAnonymous]
+                [HttpGet]
+        public IActionResult Get()
+        {
+            var users =  "Putra Woy;
+            return Ok(users);
+        }
 
         [HttpGet]
         public IActionResult GetAll()
