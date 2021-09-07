@@ -33,7 +33,7 @@ namespace WebApi.Controllers
                 [HttpGet]
         public IActionResult Get()
         {
-            var users =  "Putra Woy;
+            var users =  "Putra Woy";
             return Ok(users);
         }
 
