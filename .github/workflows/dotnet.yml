@@ -27,3 +27,9 @@ jobs:
       run: dotnet publish -c Release -o ./rel/
     - name: Sync Files0
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: putracode.somee.com/www.putracode.somee.com
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./rel/
+
