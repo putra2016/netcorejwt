@@ -33,4 +33,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./rel/
         server-dir: ./www.putracode.somee.com/
+        dangerous-clean-slate: true
 
